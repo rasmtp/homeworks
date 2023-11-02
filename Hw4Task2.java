@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Hw4Task2 {
     public static void main(String[] args) {
         int[] setNumbers = new int[1000];
-        Hw4Task1.randomNumbers(setNumbers);
+        Hw4Task2.randomNumbers(setNumbers);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Простые числа в массиве:");
         for (int i = 0; i < setNumbers.length; i++) {
