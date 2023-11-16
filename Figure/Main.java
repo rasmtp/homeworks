@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
 abstract class Figure {
     abstract double perimeter();
+
     abstract double area();
 }
+
 class Circle extends Figure {
     private double radius;
 
@@ -25,6 +28,7 @@ class Circle extends Figure {
         return Math.PI * radius * radius;
     }
 }
+
 public class Main {
     public static void main(String[] args) {
         Circle circle = new Circle(5);
@@ -76,7 +80,6 @@ class Triangle extends Figure {
         return side1 + side2 + side3;
     }
 
-
     double area(double angleInRadians) {
         return 0.5 * side1 * side2 * Math.sin(angleInRadians);
     }
@@ -87,11 +90,10 @@ class Triangle extends Figure {
     }
 
     @Override
-     double area() {
+    double area() {
         double s = perimeter() / 2;
         //semi perimeter for Heron's formula
         return area(s) + area(Math.toRadians(90)) + area(side2, side3);
-
     }
 }
 
