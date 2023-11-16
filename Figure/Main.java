@@ -1,3 +1,5 @@
+package Figure;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -6,7 +8,6 @@ abstract class Figure {
     abstract double perimeter();
     abstract double area();
 }
-
 class Circle extends Figure {
     private double radius;
 
@@ -22,6 +23,22 @@ class Circle extends Figure {
     @Override
     double area() {
         return Math.PI * radius * radius;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Circle circle = new Circle(5);
+        Square square = new Square(4);
+        Triangle triangle = new Triangle(3, 4, 5);
+
+        List<Figure> figures = new ArrayList<>();
+        figures.add(circle);
+        figures.add(square);
+        figures.add(triangle);
+
+        Figure maxAreaFigure = Collections.max(figures, Comparator.comparing(Figure::area));
+        System.out.println("Figure with the biggest area: " + maxAreaFigure.getClass().getSimpleName());
+
     }
 }
 
@@ -75,22 +92,6 @@ class Triangle extends Figure {
         //semi perimeter for Heron's formula
         return area(s) + area(Math.toRadians(90)) + area(side2, side3);
 
-    }
-    public class Main {
-        public static void main(String[] args) {
-            Circle circle = new Circle(5);
-            Square square = new Square(4);
-            Triangle triangle = new Triangle(3, 4, 5);
-
-            List<Figure> figures = new ArrayList<>();
-            figures.add(circle);
-            figures.add(square);
-            figures.add(triangle);
-
-            Figure maxAreaFigure = Collections.max(figures, Comparator.comparing(Figure::area));
-            System.out.println("Figure with the biggest area: " + maxAreaFigure.getClass().getSimpleName());
-
-        }
     }
 }
 
