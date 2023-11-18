@@ -30,7 +30,6 @@ class Circle extends Figure {
             return 0;
         }
     }
-
     @Override
     double area() {
         return Math.PI * radius * radius;
