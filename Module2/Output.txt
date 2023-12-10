@@ -1,0 +1,7 @@
+eggs, 10, 0.2;
+cucumbers, 5, 0.8;
+apples, 6, 1.2;
+eggs: 0.2
+cucumbers: 0.8
+apples: 1.2
+Average price is: 0.7333333333333334

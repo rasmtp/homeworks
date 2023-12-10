@@ -1,0 +1,7 @@
+milk,2,1.5
+eggs,10,0.2
+cucumbers,5,0.8
+bread,1,1.0
+cheese,3,2.5
+apples,6,1.2
+chicken,2,5.0
