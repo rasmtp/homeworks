@@ -14,7 +14,6 @@ public class Student {
     private String firstName;
     @ShowInfo
     private String lastName;
-    @ShowInfo
     private int age;
     @ShowInfo
     private int examScore;
