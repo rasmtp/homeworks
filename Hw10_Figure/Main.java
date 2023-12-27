@@ -1,4 +1,4 @@
-package Figure;
+package Hw10_Figure;
 
 import java.util.ArrayList;
 import java.util.Collections;
