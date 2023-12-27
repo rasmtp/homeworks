@@ -14,6 +14,7 @@ public class Student {
     private String firstName;
     @ShowInfo
     private String lastName;
+    //намерено убрал аннотацию
     private int age;
     @ShowInfo
     private int examScore;
