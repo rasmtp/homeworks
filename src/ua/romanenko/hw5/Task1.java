@@ -1,4 +1,4 @@
-package Hw5;
+package ua.romanenko.hw5;
 public class Task1 {
     public static void main(String[] args) {
         int rows = 4;

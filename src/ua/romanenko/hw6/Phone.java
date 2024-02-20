@@ -1,4 +1,4 @@
-package Hw6;
+package ua.romanenko.hw6;
 
 public class Phone {
     private String number;

@@ -1,4 +1,4 @@
-package Hw5;
+package ua.romanenko.hw5;
 
 public class Task2 {
     public static void main(String[] args) {

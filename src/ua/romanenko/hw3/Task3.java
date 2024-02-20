@@ -1,5 +1,4 @@
-package Hw3;
-
+package ua.romanenko.hw3;
 public class Task3 {
     public static void main(String[] args) {
         String stroka = "London is the capital of Great Britain";

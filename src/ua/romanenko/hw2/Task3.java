@@ -1,4 +1,4 @@
-package Hw2;
+package ua.romanenko.hw2;
 
 import java.util.Scanner;
 

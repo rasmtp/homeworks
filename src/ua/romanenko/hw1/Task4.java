@@ -1,4 +1,4 @@
-package Hw1;
+package ua.romanenko.hw1;
 
 public class Task4 {
     public static void main(String[] args) {
